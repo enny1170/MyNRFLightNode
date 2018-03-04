@@ -5,7 +5,7 @@
  * Sketch configuration
  */
 
-#define SKETCH_NAME "KableRelais"
+#define SKETCH_NAME "LightNodeNRFDuino"
 #define SKETCH_VERSION "1.0"
 
 /**********************************
@@ -13,7 +13,7 @@
  */
 
 // General settings
-#define MY_BAUD_RATE 9600
+#define MY_BAUD_RATE 115200
 #define MY_DEBUG
 #define MY_NODE_ID 14
 //#define MY_SIGNAL_REPORT_ENABLED
@@ -21,6 +21,9 @@
 
 // NRF24 radio settings
 #define MY_RADIO_NRF24
+// for NRF24DUINO you have to specify a different CE-Pin for NRF24L01+
+#define MY_RF24_CE_PIN 7
+
 //#define MY_RF24_ENABLE_ENCRYPTION
 //#define MY_RF24_CHANNEL 76
 //#define MY_RF24_PA_LEVEL RF24_PA_HIGH

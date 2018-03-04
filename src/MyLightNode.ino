@@ -13,8 +13,6 @@ Documentation available on: https://github.com/mysensors/NodeManager
  
 // load user settings
 #include "config.h"
-// for NRF24DUINO you havr to specify a different CE-Pin for NRF24L01+
-#define MY_RF24_CE_PIN 7
 
 // include supporting libraries
 #ifdef MY_GATEWAY_ESP8266
@@ -32,11 +30,11 @@ NodeManager nodeManager;
 void before() {
   // setup the serial port baud rate
   Serial.begin(MY_BAUD_RATE);  
-  pinMode(6,OUTPUT);
+  pinMode(5,OUTPUT);
   /*
    * Register below your sensors
   */
-  nodeManager.registerSensor(SENSOR_RELAY,6,1);
+  nodeManager.registerSensor(SENSOR_RELAY,5,1);
 /*   #if SIGNAL_SENSOR == 1 && defined(MY_SIGNAL_REPORT_ENABLED)
       // [33] How frequenly to send a signal report to the controller (default: 60 minutes)
       nodeManager.setSignalReportMinutes(30);
