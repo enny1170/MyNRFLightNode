@@ -22,7 +22,7 @@ Documentation available on: https://github.com/mysensors/NodeManager
 #include <MySensors.h>
 // load NodeManager library
 #include "NodeManager.h"
-
+#define MY_SIGNAL_REPORT_ENABLED
 // create a NodeManager instance
 NodeManager nodeManager;
 

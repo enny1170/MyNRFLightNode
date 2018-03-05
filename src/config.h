@@ -58,16 +58,16 @@
 //#define MY_SIGNING_ATSHA204
 
 // OTA Firmware update settings
-//#define MY_OTA_FIRMWARE_FEATURE
-//#define OTA_WAIT_PERIOD 300
-//#define FIRMWARE_MAX_REQUESTS 2
-//#define MY_OTA_RETRY 2
+#define MY_OTA_FIRMWARE_FEATURE
+#define OTA_WAIT_PERIOD 300
+#define FIRMWARE_MAX_REQUESTS 2
+#define MY_OTA_RETRY 2
 
 /**********************************
  * MySensors gateway configuration
  */
 // Common gateway settings
-//#define MY_REPEATER_FEATURE
+#define MY_REPEATER_FEATURE
 
 // Serial gateway settings
 //#define MY_GATEWAY_SERIAL
